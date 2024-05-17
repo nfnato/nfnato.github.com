@@ -64,20 +64,7 @@ input::placeholder {
     color: #ddd;
     cursor: pointer;
     font-size: 1.2em;
-}
-
-.links {
-    margin: 10px 0;
-    color: #ddd;
-}
-
-.register-link {
-    color: #1e90ff;
-    text-decoration: none;
-}
-
-.register-link:hover {
-    text-decoration: underline;
+    visibility: hidden;
 }
 
 .login-button {
@@ -85,7 +72,7 @@ input::placeholder {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #1e90ff;
+    background-color: #181818; /* Match the background color */
     color: #fff;
     cursor: pointer;
     font-size: 1em;
@@ -93,5 +80,5 @@ input::placeholder {
 }
 
 .login-button:hover {
-    background-color: #1c86ee;
+    background-color: #3a3a3a;
 }
