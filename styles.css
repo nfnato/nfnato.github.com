@@ -22,12 +22,12 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 400px;
     text-align: center;
-    height: 500px; /* Make the box taller */
+    height: 500px; /* Increased height to make the box taller */
 }
 
 .login-header .fingerprint-icon {
     width: 100px;
-    filter: grayscale(100%);
+    filter: grayscale(100%); /* Made the icon slightly grey */
     margin-bottom: 30px;
 }
 
@@ -44,7 +44,7 @@ label {
 }
 
 input {
-    width: 100%; /* Ensure the inputs have the same width */
+    width: 100%; /* Ensured the inputs have the same width */
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #444;
@@ -72,11 +72,11 @@ input::placeholder {
     color: #ddd;
     cursor: pointer;
     font-size: 1.2em;
-    visibility: visible; /* Always visible */
+    visibility: visible; /* Made the eye button always visible */
 }
 
 .login-button {
-    width: 100%; /* Ensure the button has the same width as the inputs */
+    width: 100%; /* Ensured the button has the same width as the inputs */
     padding: 12px;
     border: none;
     border-radius: 5px;
