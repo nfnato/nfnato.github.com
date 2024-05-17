@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lg</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="login-container">
-        <div class="login-box">
-            <div class="login-header">
-                <img src="http://www.pngall.com/wp-content/uploads/2016/06/Fingerprint-Free-Download-PNG.png" alt="Fingerprint Icon" class="fingerprint-icon">
+        <div class="login-form">
+            <div class="icon">
+                <img src="https://cdn.discordapp.com/attachments/1238886354235031593/1241088166560010240/Screenshot_2024-05-03_121216.png?ex=6648eced&is=66479b6d&hm=4b0583d6390812286e4d8d6975d02aa74c5968b8b072deabaac854f3e1e5d5e3&" alt="Fingerprint Icon">
             </div>
-            <form>
+            <form action="#" method="post">
                 <div class="input-group">
-                    <label for="username">Username*</label>
+                    <label for="username">Username:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
                 <div class="input-group">
-                    <label for="password">Password*</label>
+                    <label for="password">Password:</label>
                     <input type="password" id="password" name="password" required>
-                    <button type="button" class="show-password" id="togglePassword" onclick="togglePassword()"></button>
                 </div>
-                <button type="submit" class="login-button">Login</button>
+                <div class="register-link">
+                    <span>No account? <a href="register.html">Register</a></span>
+                </div>
+                <button type="submit">Login</button>
             </form>
         </div>
     </div>
-
-    <script>
-        function togglePassword() {
-            const passwordField = document.getElementById('password');
-            const passwordType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', passwordType);
-        }
-    </script>
 </body>
 </html>
