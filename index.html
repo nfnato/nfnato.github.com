@@ -19,8 +19,8 @@
                 </div>
                 <div class="input-group">
                     <label for="password">Password*</label>
-                    <input type="password" id="password" name="password" required oninput="checkInput()">
-                    <button type="button" class="show-password" id="togglePassword" onclick="togglePassword()">👁️</button>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" class="show-password" id="togglePassword" onclick="togglePassword()"></button>
                 </div>
                 <button type="submit" class="login-button">Login</button>
             </form>
@@ -32,20 +32,6 @@
             const passwordField = document.getElementById('password');
             const passwordType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
             passwordField.setAttribute('type', passwordType);
-        }
-
-        function checkInput() {
-            const passwordField = document.getElementById('password');
-            const toggleButton = document.getElementById('togglePassword');
-            if (passwordField.value.length > 0) {
-                toggleButton.style.visibility = 'visible';
-            } else {
-                toggleButton.style.visibility = 'hidden';
-            }
-        }
-
-        window.onload = function() {
-            checkInput();
         }
     </script>
 </body>
