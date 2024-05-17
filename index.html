@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <img src="http://www.pngall.com/wp-content/uploads/2016/06/Fingerprint-Free-Download-PNG.png" alt="Fingerprint Icon" class="fingerprint-icon">
+            </div>
+            <form>
+                <div class="input-group">
+                    <label for="username">Username <span class="required">*</span></label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password <span class="required">*</span></label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" class="show-password" onclick="togglePassword()">👁️</button>
+                </div>
+                <div class="links">
+                    <a href="#" class="register-link">Register</a>
+                </div>
+                <button type="submit" class="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const passwordType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', passwordType);
+        }
+    </script>
+</body>
+</html>
