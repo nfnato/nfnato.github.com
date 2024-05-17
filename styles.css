@@ -22,17 +22,17 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 400px;
     text-align: center;
-    height: 500px; /* Increased height to make the box taller */
+    height: 450px; /* Reduced height to make the box slightly shorter */
 }
 
 .login-header .fingerprint-icon {
     width: 100px;
-    filter: grayscale(100%); /* Made the icon slightly grey */
+    filter: grayscale(100%);
     margin-bottom: 30px;
 }
 
 .input-group {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduced margin to lower the button */
     position: relative;
     text-align: left;
 }
@@ -41,16 +41,17 @@ label {
     display: block;
     margin-bottom: 5px;
     color: #ddd;
+    font-size: 0.9em; /* Smaller text for labels */
 }
 
 input {
-    width: 100%; /* Ensured the inputs have the same width */
+    width: 100%;
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #444;
-    background-color: #1c1c1c;
+    background-color: #222; /* Closer grey to the background */
     color: #ddd;
-    font-size: 1em;
+    font-size: 0.9em; /* Smaller text for input fields */
     box-sizing: border-box;
 }
 
@@ -72,19 +73,20 @@ input::placeholder {
     color: #ddd;
     cursor: pointer;
     font-size: 1.2em;
-    visibility: visible; /* Made the eye button always visible */
+    visibility: visible; /* Always visible */
 }
 
 .login-button {
-    width: 100%; /* Ensured the button has the same width as the inputs */
+    width: 100%;
     padding: 12px;
     border: none;
     border-radius: 5px;
     background-color: #181818; /* Match the background color */
     color: #fff;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.9em; /* Smaller text for the button */
     box-sizing: border-box;
+    margin-top: 20px; /* Added margin to lower the button */
 }
 
 .login-button:hover {
