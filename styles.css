@@ -22,6 +22,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 400px;
     text-align: center;
+    height: 500px; /* Make the box taller */
 }
 
 .login-header .fingerprint-icon {
@@ -43,7 +44,7 @@ label {
 }
 
 input {
-    width: 100%;
+    width: 100%; /* Ensure the inputs have the same width */
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #444;
@@ -75,7 +76,7 @@ input::placeholder {
 }
 
 .login-button {
-    width: 100%;
+    width: 100%; /* Ensure the button has the same width as the inputs */
     padding: 12px;
     border: none;
     border-radius: 5px;
