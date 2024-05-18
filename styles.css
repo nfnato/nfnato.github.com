@@ -72,9 +72,9 @@ input::placeholder {
 }
 .credits {
     color: #ddd;
-    font-size: 0.9em; /* Reduced font size */
-    margin-bottom: 15px; /* Margin below the message */
-    text-align: center;
+    font-size: 0.6em; /* Reduced font size */
+    margin-bottom: 9px; /* Margin below the message */
+    text-align: left;
 }
 
 .show-password {
