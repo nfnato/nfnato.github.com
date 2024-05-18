@@ -75,6 +75,7 @@ input::placeholder {
     font-size: 0.6em; /* Reduced font size */
     margin-bottom: 9px; /* Margin below the message */
     text-align: left;
+    position: bottom;
 }
 
 .show-password {
