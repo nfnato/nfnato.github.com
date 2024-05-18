@@ -74,6 +74,12 @@ input::placeholder {
     margin-bottom: 15px; /* Margin below the message */
     text-align: center;
 }
+.credits {
+    color: #ddd;
+    font-size: 0.9em; /* Reduced font size */
+    margin-bottom: 15px; /* Margin below the message */
+    text-align: center;
+}
 
 .show-password {
     position: absolute;
