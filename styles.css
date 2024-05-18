@@ -71,6 +71,15 @@ input::placeholder {
     text-align: center;
     position: left;
 }
+.link {
+    color: #4ea8e2; /* Light blue color for the link */
+    text-decoration: none; /* Remove underline */
+}
+
+.link:hover {
+    color: #3d87bb; /* Darker blue color when hovered */
+}
+
 .credits {
     color: #FFFFFF;
     font-size: 0.6em; /* Reduced font size */
