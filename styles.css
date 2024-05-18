@@ -17,12 +17,12 @@ body {
 
 .login-box {
     background-color: #2e2e2e;
-    padding: 50px;
+    padding: 40px; /* Adjusted padding */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 400px;
     text-align: center;
-    height: 450px; /* Reduced height to make the box smaller */
+    height: 400px; /* Further reduced height */
 }
 
 .login-header .fingerprint-icon {
@@ -32,7 +32,7 @@ body {
 }
 
 .input-group {
-    margin-bottom: 20px; /* Reduced margin to lower the button */
+    margin-bottom: 15px; /* Reduced margin */
     position: relative;
     text-align: left;
 }
@@ -42,6 +42,10 @@ label {
     margin-bottom: 5px;
     color: #ddd;
     font-size: 0.9em; /* Reduced font size */
+}
+
+label span {
+    color: #ff4d4d; /* Reddish color for the asterisk */
 }
 
 input {
@@ -62,6 +66,13 @@ input:focus {
 
 input::placeholder {
     color: #888;
+}
+
+.no-account-message {
+    color: #ddd;
+    font-size: 0.9em; /* Reduced font size */
+    margin-bottom: 15px; /* Margin below the message */
+    text-align: center;
 }
 
 .show-password {
