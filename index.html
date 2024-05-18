@@ -35,11 +35,24 @@
     </div>
 
     <script>
-        function togglePassword() {
-            const passwordField = document.getElementById('password');
-            const passwordType = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-            passwordField.setAttribute('type', passwordType);
-        }
-    </script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Check if username and password match
+            if (username === 'nfnato' && password === 'admin') {
+                window.location.href = 'https://nfnato.github.io/test'; // Redirect to the specified URL
+            } else {
+                alert('Incorrect username or password. Please try again.'); // Notify user of incorrect credentials
+            }
+        });
+    });
+</script>
+
 </body>
 </html>
