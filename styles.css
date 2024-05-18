@@ -26,9 +26,9 @@ body {
 }
 
 .login-header .fingerprint-icon {
-    width: 100px;
-    filter: grayscale(100%); /* Made the icon slightly grey */
-    margin-bottom: 30px;
+    width: 300px;
+    filter: grayscale(20%); /* Made the icon slightly grey */
+    margin-bottom: 90px;
 }
 
 .input-group {
