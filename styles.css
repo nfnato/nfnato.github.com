@@ -65,13 +65,14 @@ input::placeholder {
 }
 
 .no-account-message {
-    color: #ddd;
+    color: #56C0DA;
     font-size: 0.9em; /* Reduced font size */
     margin-bottom: 15px; /* Margin below the message */
     text-align: center;
+    position: left;
 }
 .credits {
-    color: #ddd;
+    color: #56C0DA;
     font-size: 0.6em; /* Reduced font size */
     margin-bottom: 9px; /* Margin below the message */
     text-align: left;
@@ -95,7 +96,7 @@ input::placeholder {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #181818; /* Match the background color */
+    background-color: #232323; /* Match the background color */
     color: #fff;
     cursor: pointer;
     font-size: 0.9em; /* Reduced font size */
